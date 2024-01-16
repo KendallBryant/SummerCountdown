@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462485382B5B68CB004C45CF /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 462485372B5B68CB004C45CF /* Pow */; };
+		468396272B56D7A00001B2F3 /* SummerCountdownAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468396262B56D7A00001B2F3 /* SummerCountdownAppApp.swift */; };
+		468396292B56D7A00001B2F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468396282B56D7A00001B2F3 /* ContentView.swift */; };
+		4683962B2B56D7A10001B2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4683962A2B56D7A10001B2F3 /* Assets.xcassets */; };
+		4683962E2B56D7A10001B2F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4683962D2B56D7A10001B2F3 /* Preview Assets.xcassets */; };
+		468396382B56D81A0001B2F3 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468396372B56D81A0001B2F3 /* Dates.swift */; };
+		4683963A2B56D8600001B2F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468396392B56D8600001B2F3 /* SettingsViewModel.swift */; };
+		4683963C2B56D8750001B2F3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683963B2B56D8750001B2F3 /* SettingsView.swift */; };
+		4683963E2B56D8A90001B2F3 /* GIFimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683963D2B56D8A90001B2F3 /* GIFimageView.swift */; };
+		468396402B56D8C40001B2F3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683963F2B56D8C40001B2F3 /* ContentViewModel.swift */; };
+		4683964D2B56D99C0001B2F3 /* g22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396412B56D99C0001B2F3 /* g22.gif */; };
+		4683964E2B56D99C0001B2F3 /* g05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396422B56D99C0001B2F3 /* g05.gif */; };
+		4683964F2B56D99C0001B2F3 /* g04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396432B56D99C0001B2F3 /* g04.gif */; };
+		468396502B56D99C0001B2F3 /* g09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396442B56D99C0001B2F3 /* g09.gif */; };
+		468396512B56D99C0001B2F3 /* g01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396452B56D99C0001B2F3 /* g01.gif */; };
+		468396522B56D99C0001B2F3 /* g02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396462B56D99C0001B2F3 /* g02.gif */; };
+		468396532B56D99C0001B2F3 /* g10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396472B56D99C0001B2F3 /* g10.gif */; };
+		468396542B56D99C0001B2F3 /* g24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396482B56D99C0001B2F3 /* g24.gif */; };
+		468396552B56D99C0001B2F3 /* g25.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396492B56D99C0001B2F3 /* g25.gif */; };
+		468396562B56D99C0001B2F3 /* g06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4683964A2B56D99C0001B2F3 /* g06.gif */; };
+		468396572B56D99C0001B2F3 /* g14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4683964B2B56D99C0001B2F3 /* g14.gif */; };
+		468396582B56D99C0001B2F3 /* g12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4683964C2B56D99C0001B2F3 /* g12.gif */; };
+		4683965A2B56DB360001B2F3 /* ByteBounce.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468396592B56DB360001B2F3 /* ByteBounce.ttf */; };
+		4683965C2B56DB440001B2F3 /* AldotheApache.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4683965B2B56DB440001B2F3 /* AldotheApache.ttf */; };
+		468396612B56DCAA0001B2F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468396602B56DCAA0001B2F3 /* Launch Screen.storyboard */; };
+		46EE417C2B5AB909002BB379 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 46EE417B2B5AB909002BB379 /* SwiftyGif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		462485392B5B702E004C45CF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		468396232B56D7A00001B2F3 /* SummerCountdownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerCountdownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		468396262B56D7A00001B2F3 /* SummerCountdownAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerCountdownAppApp.swift; sourceTree = "<group>"; };
+		468396282B56D7A00001B2F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4683962A2B56D7A10001B2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4683962D2B56D7A10001B2F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		468396372B56D81A0001B2F3 /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
+		468396392B56D8600001B2F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4683963B2B56D8750001B2F3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4683963D2B56D8A90001B2F3 /* GIFimageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFimageView.swift; sourceTree = "<group>"; };
+		4683963F2B56D8C40001B2F3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		468396412B56D99C0001B2F3 /* g22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g22.gif; sourceTree = "<group>"; };
+		468396422B56D99C0001B2F3 /* g05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g05.gif; sourceTree = "<group>"; };
+		468396432B56D99C0001B2F3 /* g04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g04.gif; sourceTree = "<group>"; };
+		468396442B56D99C0001B2F3 /* g09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g09.gif; sourceTree = "<group>"; };
+		468396452B56D99C0001B2F3 /* g01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g01.gif; sourceTree = "<group>"; };
+		468396462B56D99C0001B2F3 /* g02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g02.gif; sourceTree = "<group>"; };
+		468396472B56D99C0001B2F3 /* g10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g10.gif; sourceTree = "<group>"; };
+		468396482B56D99C0001B2F3 /* g24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g24.gif; sourceTree = "<group>"; };
+		468396492B56D99C0001B2F3 /* g25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g25.gif; sourceTree = "<group>"; };
+		4683964A2B56D99C0001B2F3 /* g06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g06.gif; sourceTree = "<group>"; };
+		4683964B2B56D99C0001B2F3 /* g14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g14.gif; sourceTree = "<group>"; };
+		4683964C2B56D99C0001B2F3 /* g12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g12.gif; sourceTree = "<group>"; };
+		468396592B56DB360001B2F3 /* ByteBounce.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ByteBounce.ttf; sourceTree = "<group>"; };
+		4683965B2B56DB440001B2F3 /* AldotheApache.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AldotheApache.ttf; sourceTree = "<group>"; };
+		4683965F2B56DC4B0001B2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		468396602B56DCAA0001B2F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		468396202B56D7A00001B2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EE417C2B5AB909002BB379 /* SwiftyGif in Frameworks */,
+				462485382B5B68CB004C45CF /* Pow in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4683961A2B56D7A00001B2F3 = {
+			isa = PBXGroup;
+			children = (
+				468396252B56D7A00001B2F3 /* SummerCountdownApp */,
+				468396242B56D7A00001B2F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		468396242B56D7A00001B2F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				468396232B56D7A00001B2F3 /* SummerCountdownApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		468396252B56D7A00001B2F3 /* SummerCountdownApp */ = {
+			isa = PBXGroup;
+			children = (
+				4683965F2B56DC4B0001B2F3 /* Info.plist */,
+				462485392B5B702E004C45CF /* PrivacyInfo.xcprivacy */,
+				468396342B56D7C50001B2F3 /* Model */,
+				468396352B56D7CE0001B2F3 /* SettingsView */,
+				468396362B56D7D70001B2F3 /* ContentView */,
+				468396262B56D7A00001B2F3 /* SummerCountdownAppApp.swift */,
+				4683962A2B56D7A10001B2F3 /* Assets.xcassets */,
+				4683965E2B56DC150001B2F3 /* GIFs */,
+				4683965D2B56DC040001B2F3 /* Fonts */,
+				4683962C2B56D7A10001B2F3 /* Preview Content */,
+				468396602B56DCAA0001B2F3 /* Launch Screen.storyboard */,
+			);
+			path = SummerCountdownApp;
+			sourceTree = "<group>";
+		};
+		4683962C2B56D7A10001B2F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4683962D2B56D7A10001B2F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		468396342B56D7C50001B2F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				468396372B56D81A0001B2F3 /* Dates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		468396352B56D7CE0001B2F3 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				468396392B56D8600001B2F3 /* SettingsViewModel.swift */,
+				4683963B2B56D8750001B2F3 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		468396362B56D7D70001B2F3 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4683963D2B56D8A90001B2F3 /* GIFimageView.swift */,
+				468396282B56D7A00001B2F3 /* ContentView.swift */,
+				4683963F2B56D8C40001B2F3 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		4683965D2B56DC040001B2F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				468396592B56DB360001B2F3 /* ByteBounce.ttf */,
+				4683965B2B56DB440001B2F3 /* AldotheApache.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4683965E2B56DC150001B2F3 /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				468396452B56D99C0001B2F3 /* g01.gif */,
+				468396462B56D99C0001B2F3 /* g02.gif */,
+				468396432B56D99C0001B2F3 /* g04.gif */,
+				468396422B56D99C0001B2F3 /* g05.gif */,
+				4683964A2B56D99C0001B2F3 /* g06.gif */,
+				468396442B56D99C0001B2F3 /* g09.gif */,
+				468396472B56D99C0001B2F3 /* g10.gif */,
+				4683964C2B56D99C0001B2F3 /* g12.gif */,
+				4683964B2B56D99C0001B2F3 /* g14.gif */,
+				468396412B56D99C0001B2F3 /* g22.gif */,
+				468396482B56D99C0001B2F3 /* g24.gif */,
+				468396492B56D99C0001B2F3 /* g25.gif */,
+			);
+			path = GIFs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		468396222B56D7A00001B2F3 /* SummerCountdownApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468396312B56D7A10001B2F3 /* Build configuration list for PBXNativeTarget "SummerCountdownApp" */;
+			buildPhases = (
+				4683961F2B56D7A00001B2F3 /* Sources */,
+				468396202B56D7A00001B2F3 /* Frameworks */,
+				468396212B56D7A00001B2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SummerCountdownApp;
+			packageProductDependencies = (
+				46EE417B2B5AB909002BB379 /* SwiftyGif */,
+				462485372B5B68CB004C45CF /* Pow */,
+			);
+			productName = SummerCountdownApp;
+			productReference = 468396232B56D7A00001B2F3 /* SummerCountdownApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4683961B2B56D7A00001B2F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					468396222B56D7A00001B2F3 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 4683961E2B56D7A00001B2F3 /* Build configuration list for PBXProject "SummerCountdownApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4683961A2B56D7A00001B2F3;
+			packageReferences = (
+				46EE417A2B5AB909002BB379 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+				462485362B5B68CB004C45CF /* XCRemoteSwiftPackageReference "Pow" */,
+			);
+			productRefGroup = 468396242B56D7A00001B2F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				468396222B56D7A00001B2F3 /* SummerCountdownApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		468396212B56D7A00001B2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4683965C2B56DB440001B2F3 /* AldotheApache.ttf in Resources */,
+				468396562B56D99C0001B2F3 /* g06.gif in Resources */,
+				468396612B56DCAA0001B2F3 /* Launch Screen.storyboard in Resources */,
+				468396532B56D99C0001B2F3 /* g10.gif in Resources */,
+				468396552B56D99C0001B2F3 /* g25.gif in Resources */,
+				4683964D2B56D99C0001B2F3 /* g22.gif in Resources */,
+				4683965A2B56DB360001B2F3 /* ByteBounce.ttf in Resources */,
+				4683962E2B56D7A10001B2F3 /* Preview Assets.xcassets in Resources */,
+				468396572B56D99C0001B2F3 /* g14.gif in Resources */,
+				4683962B2B56D7A10001B2F3 /* Assets.xcassets in Resources */,
+				468396542B56D99C0001B2F3 /* g24.gif in Resources */,
+				468396512B56D99C0001B2F3 /* g01.gif in Resources */,
+				468396522B56D99C0001B2F3 /* g02.gif in Resources */,
+				468396502B56D99C0001B2F3 /* g09.gif in Resources */,
+				468396582B56D99C0001B2F3 /* g12.gif in Resources */,
+				4683964F2B56D99C0001B2F3 /* g04.gif in Resources */,
+				4683964E2B56D99C0001B2F3 /* g05.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4683961F2B56D7A00001B2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4683963C2B56D8750001B2F3 /* SettingsView.swift in Sources */,
+				468396382B56D81A0001B2F3 /* Dates.swift in Sources */,
+				468396292B56D7A00001B2F3 /* ContentView.swift in Sources */,
+				468396402B56D8C40001B2F3 /* ContentViewModel.swift in Sources */,
+				4683963E2B56D8A90001B2F3 /* GIFimageView.swift in Sources */,
+				468396272B56D7A00001B2F3 /* SummerCountdownAppApp.swift in Sources */,
+				4683963A2B56D8600001B2F3 /* SettingsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4683962F2B56D7A10001B2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		468396302B56D7A10001B2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		468396322B56D7A10001B2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SummerCountdownApp/Preview Content\"";
+				DEVELOPMENT_TEAM = H4C36432ZN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SummerCountdownApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Summer Countdown";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kendall.bryant.SummerCountdownApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		468396332B56D7A10001B2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SummerCountdownApp/Preview Content\"";
+				DEVELOPMENT_TEAM = H4C36432ZN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SummerCountdownApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Summer Countdown";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kendall.bryant.SummerCountdownApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4683961E2B56D7A00001B2F3 /* Build configuration list for PBXProject "SummerCountdownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4683962F2B56D7A10001B2F3 /* Debug */,
+				468396302B56D7A10001B2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		468396312B56D7A10001B2F3 /* Build configuration list for PBXNativeTarget "SummerCountdownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468396322B56D7A10001B2F3 /* Debug */,
+				468396332B56D7A10001B2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		462485362B5B68CB004C45CF /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		46EE417A2B5AB909002BB379 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		462485372B5B68CB004C45CF /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 462485362B5B68CB004C45CF /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+		46EE417B2B5AB909002BB379 /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46EE417A2B5AB909002BB379 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4683961B2B56D7A00001B2F3 /* Project object */;
+}
