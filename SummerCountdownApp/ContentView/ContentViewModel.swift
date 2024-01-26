@@ -45,30 +45,112 @@ final class ContentViewModel: ObservableObject {
         niceGIF = niceGIFs.randomElement()!
     }
     
-// this function decides if the user gets a new roll for GIF mascot and nice message
-    func updateNiceMessage() {
-        let lastUpdateDate = UserDefaults.standard.value(forKey: "lastUpdateDate") as? Date
-        // Check if a day has passed since the last update
-        if let lastUpdateDate = lastUpdateDate, Date().timeIntervalSince(lastUpdateDate) < 24 * 60 * 60 {
-            return  // Skip the update if less than a day has passed
-        }
-        // Update the niceMessage with a new random element
-        niceMessage = niceMessages.randomElement()!
-        // Save the current date as the last update date
-        UserDefaults.standard.set(Date(), forKey: "lastUpdateDate")
+
+    // starting update GIF functions
+    // this function gets a new random GIF
+    @objc func updateNiceGif() {
+        self.niceGIF = niceGIFs.randomElement()!
+        saveLastGifUpdateTime()
     }
     
-    func updateNiceGif() {
-        let lastUpdateDate = UserDefaults.standard.value(forKey: "lastUpdateDate") as? Date
-        // Check if a day has passed since the last update
-        if let lastUpdateDate = lastUpdateDate, Date().timeIntervalSince(lastUpdateDate) < 24 * 60 * 60 {
-            return  // Skip the update if less than a day has passed
+    // everything below is for running updateNiceGif at 5am
+    func scheduleDailyGifRefresh() {
+        let calendar = Calendar.current
+        var components = calendar.dateComponents([.year, .month, .day], from: Date())
+        components.hour = 5
+        components.minute = 0
+        components.second = 0
+        
+        guard let scheduledDateToday = calendar.date(from: components) else {
+            return
         }
-        // Update the niceMessage with a new random element
-        niceGIF = niceGIFs.randomElement()!
-        // Save the current date as the last update date
-        UserDefaults.standard.set(Date(), forKey: "lastUpdateDate")
+
+        // If 5 AM today has already passed, schedule for 5 AM the next day
+        let scheduledDate = scheduledDateToday > Date() ? scheduledDateToday : calendar.date(byAdding: .day, value: 1, to: scheduledDateToday)!
+        
+        let timer = Timer(fireAt: scheduledDate, interval: 86400, target: self, selector: #selector(updateNiceGif), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: .common)
     }
+    
+    func saveLastGifUpdateTime() {
+        UserDefaults.standard.set(Date(), forKey: "lastGifUpdateTime")
+    }
+
+    func getLastGifUpdateTime() -> Date? {
+        return UserDefaults.standard.object(forKey: "lastGifUpdateTime") as? Date
+    }
+
+    // Step 3: Check Last Update Time on App Launch
+    func checkAndUpdateGifIfNeeded() {
+        let calendar = Calendar.current
+        var components = calendar.dateComponents([.year, .month, .day], from: Date())
+        components.hour = 5
+        components.minute = 0
+        components.second = 0
+        let fiveAMToday = calendar.date(from: components)!
+
+        if let lastGifUpdateTime = getLastGifUpdateTime() {
+            if lastGifUpdateTime < fiveAMToday {
+                updateNiceGif()
+            }
+        } else {
+            // If there's no recorded last update time, update immediately
+            updateNiceGif()
+        }
+    }
+    // end updating GIF at 5am
+    
+    // everything below is the same as the GIF refresh but for messages
+    @objc func updateNiceMessage() {
+        self.niceMessage = niceMessages.randomElement()!
+        saveLastMessageUpdateTime()
+    }
+    func scheduleDailyMessageRefresh() {
+        let calendar = Calendar.current
+        var components = calendar.dateComponents([.year, .month, .day], from: Date())
+        components.hour = 5
+        components.minute = 0
+        components.second = 0
+        
+        guard let scheduledDateToday = calendar.date(from: components) else {
+            return
+        }
+        
+        // If 5 AM today has already passed, schedule for 5 AM the next day
+        let scheduledDate = scheduledDateToday > Date() ? scheduledDateToday : calendar.date(byAdding: .day, value: 1, to: scheduledDateToday)!
+
+        let timer = Timer(fireAt: scheduledDate, interval: 86400, target: self, selector: #selector(updateNiceMessage), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: .common)
+    }
+    
+    
+    func saveLastMessageUpdateTime() {
+        UserDefaults.standard.set(Date(), forKey: "lastMessageUpdateTime")
+    }
+
+    func getLastMessageUpdateTime() -> Date? {
+        return UserDefaults.standard.object(forKey: "lastMessageUpdateTime") as? Date
+    }
+
+    // Step 3: Check Last Update Time on App Launch
+    func checkAndUpdateMessageIfNeeded() {
+        let calendar = Calendar.current
+        var components = calendar.dateComponents([.year, .month, .day], from: Date())
+        components.hour = 5
+        components.minute = 0
+        components.second = 0
+        let fiveAMToday = calendar.date(from: components)!
+
+        if let lastMessageUpdateTime = getLastMessageUpdateTime() {
+            if lastMessageUpdateTime < fiveAMToday {
+                updateNiceMessage()
+            }
+        } else {
+            // If there's no recorded last update time, update immediately
+            updateNiceMessage()
+        }
+    }
+    // end updating messages
     
     // this function decides if we get a reminder to check official school calendar
     func shouldShowMonthlyAlert() -> Bool {
@@ -113,8 +195,10 @@ struct CountdownView: View {
         }
         .refreshable {
             datesViewModel.updateFoundValue()
-            contentViewModel.updateNiceMessage()
-            contentViewModel.updateNiceGif()
+            // the below would be if I wanted to update the GIF and message
+            // on refresh instead of at 5am
+//            contentViewModel.updateNiceMessage()
+//            contentViewModel.updateNiceGif()
         }
     }
 }
@@ -155,6 +239,7 @@ struct SummerView: View {
         }
         .refreshable {
             datesViewModel.updateFoundValue()
+//            contentViewModel.updateNiceGif()
         }
     }
 }
@@ -172,21 +257,21 @@ class GifViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.addSubview(gifImageView)
         gifImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             gifImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-         //   gifImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor), //I commented this out to move my GIF
-                                  // down the screen, this line was putting
-                                 // his feet right in the center
+            //   gifImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor), //I commented this out to move my GIF
+            // down the screen, this line was putting
+            // his feet right in the center
             gifImageView.widthAnchor.constraint(equalToConstant: 360),
             gifImageView.heightAnchor.constraint(equalToConstant: 360)
         ])
-
+        updateGifImage()
         do {
             let gif = try UIImage(gifName: gifName)
             gifImageView.setGifImage(gif)
@@ -203,6 +288,21 @@ struct GifViewControllerRepresentable: UIViewControllerRepresentable {
         GifViewController(gifName: gifName)
     }
     func updateUIViewController(_ uiViewController: GifViewController, context: Context) {
+        if uiViewController.gifName != gifName {
+            uiViewController.gifName = gifName
+            uiViewController.updateGifImage()
+        }
+    }
+}
+extension GifViewController {
+    func updateGifImage() {
+        do {
+            let gif = try UIImage(gifName: gifName)
+            gifImageView.setGifImage(gif)
+            gifImageView.loopCount = -1 // Infinite loop
+        } catch {
+            print(error)
+        }
     }
 }
 // end GIF controller

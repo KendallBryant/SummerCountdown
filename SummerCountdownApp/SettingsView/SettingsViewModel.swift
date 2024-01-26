@@ -30,7 +30,7 @@ final class SettingsViewModel: ObservableObject {
         self.selectedSchool = UserDefaults.standard.string(forKey: Self.selectedSchoolKey) ?? defaultSelectedSchool
     }
     
-    let schools = ["Fairfax County Public Schools (VA)", "Chesapeake Public Schools (VA)", "Pennsville School District (NJ)"]
+    let schools = ["Chesapeake Public Schools (VA)", "Fairfax County Public Schools (VA)",  "Pennsville School District (NJ)"]
     
     private let defaultSchoolEndingTime = Calendar.current.date(bySettingHour: 15, minute: 0, second: 0, of: Date())!
     private let defaultSelectedSchool = "Fairfax County Public Schools (VA)"

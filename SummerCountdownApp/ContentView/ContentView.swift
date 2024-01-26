@@ -49,6 +49,10 @@ struct ContentView: View {
                         showAlert = true
                     }
                     datesViewModel.scheduleDailyRefresh(at: settingsViewModel.schoolEndingTime)
+                    contentViewModel.scheduleDailyGifRefresh()
+                    contentViewModel.scheduleDailyMessageRefresh()
+                    contentViewModel.checkAndUpdateGifIfNeeded()
+                    contentViewModel.checkAndUpdateMessageIfNeeded()
                 }
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text("Reminder"), message: Text("Please always check your\nschool system's calendar for the official school dates."), dismissButton: .default(Text("OK")))

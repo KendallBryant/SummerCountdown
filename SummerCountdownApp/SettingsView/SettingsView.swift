@@ -32,19 +32,17 @@ struct SettingsView: View {
             }
             
             
-            Section(header: Text("User information")) {
+            Section() {
                 DatePicker("What time does your school day end?", selection: $viewModel.schoolEndingTime, displayedComponents: .hourAndMinute)
                     .onChange(of: viewModel.schoolEndingTime) { oldValue, newValue in
                         UserDefaults.standard.set(newValue, forKey: Self.schoolEndingTimeKey)
                     }
             }
             
-            Section(header: Text("summer countdown info")) {
-                Text("Summer Countdown is based on January 2024 data. Always check your school's calendar for official school dates.")
-                    .multilineTextAlignment(.center)
-                Link("Learn more", destination: URL(string: "https://www.rabbitsinthehouse.org/")!)
+            Section(header: Text("summer countdown info"), footer: Text("Summer Countdown is based on January 2024 data and is not intended to be a replacement for the official school calendar. If your school calendar has changed since January 2024, please use the website linked above to submit an update request")) {
+                Link("Website", destination: URL(string: "https://www.summercountdownapp.com/")!)
                     .frame(maxWidth: .infinity, alignment: .center)
-                Link("Privacy policy", destination: URL(string: "https://www.rabbitsinthehouse.org/")!)
+                Link("Privacy policy", destination: URL(string: "https://www.summercountdownapp.com/privacypolicy/")!)
                     .frame(maxWidth: .infinity, alignment: .center)
             }
         }

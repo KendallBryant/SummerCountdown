@@ -15,7 +15,6 @@
 		468396382B56D81A0001B2F3 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468396372B56D81A0001B2F3 /* Dates.swift */; };
 		4683963A2B56D8600001B2F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468396392B56D8600001B2F3 /* SettingsViewModel.swift */; };
 		4683963C2B56D8750001B2F3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683963B2B56D8750001B2F3 /* SettingsView.swift */; };
-		4683963E2B56D8A90001B2F3 /* GIFimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683963D2B56D8A90001B2F3 /* GIFimageView.swift */; };
 		468396402B56D8C40001B2F3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683963F2B56D8C40001B2F3 /* ContentViewModel.swift */; };
 		4683964D2B56D99C0001B2F3 /* g22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396412B56D99C0001B2F3 /* g22.gif */; };
 		4683964E2B56D99C0001B2F3 /* g05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468396422B56D99C0001B2F3 /* g05.gif */; };
@@ -36,7 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		462485392B5B702E004C45CF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		468396232B56D7A00001B2F3 /* SummerCountdownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerCountdownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468396262B56D7A00001B2F3 /* SummerCountdownAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerCountdownAppApp.swift; sourceTree = "<group>"; };
 		468396282B56D7A00001B2F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +43,6 @@
 		468396372B56D81A0001B2F3 /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		468396392B56D8600001B2F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		4683963B2B56D8750001B2F3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		4683963D2B56D8A90001B2F3 /* GIFimageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFimageView.swift; sourceTree = "<group>"; };
 		4683963F2B56D8C40001B2F3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		468396412B56D99C0001B2F3 /* g22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g22.gif; sourceTree = "<group>"; };
 		468396422B56D99C0001B2F3 /* g05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g05.gif; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				4683965F2B56DC4B0001B2F3 /* Info.plist */,
-				462485392B5B702E004C45CF /* PrivacyInfo.xcprivacy */,
 				468396342B56D7C50001B2F3 /* Model */,
 				468396352B56D7CE0001B2F3 /* SettingsView */,
 				468396362B56D7D70001B2F3 /* ContentView */,
@@ -140,7 +136,6 @@
 		468396362B56D7D70001B2F3 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
-				4683963D2B56D8A90001B2F3 /* GIFimageView.swift */,
 				468396282B56D7A00001B2F3 /* ContentView.swift */,
 				4683963F2B56D8C40001B2F3 /* ContentViewModel.swift */,
 			);
@@ -272,7 +267,6 @@
 				468396382B56D81A0001B2F3 /* Dates.swift in Sources */,
 				468396292B56D7A00001B2F3 /* ContentView.swift in Sources */,
 				468396402B56D8C40001B2F3 /* ContentViewModel.swift in Sources */,
-				4683963E2B56D8A90001B2F3 /* GIFimageView.swift in Sources */,
 				468396272B56D7A00001B2F3 /* SummerCountdownAppApp.swift in Sources */,
 				4683963A2B56D8600001B2F3 /* SettingsViewModel.swift in Sources */,
 			);
@@ -333,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -390,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -407,7 +401,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"SummerCountdownApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4C36432ZN;
 				ENABLE_PREVIEWS = YES;
@@ -425,7 +419,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kendall.bryant.SummerCountdownApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -445,7 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"SummerCountdownApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4C36432ZN;
 				ENABLE_PREVIEWS = YES;
@@ -463,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kendall.bryant.SummerCountdownApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
